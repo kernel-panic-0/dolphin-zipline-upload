@@ -4,14 +4,17 @@ MimeType=application/octet-stream;
 Actions=ziplineUpload;ziplineConfigure;
 X-KDE-Priority=TopLevel
 Name=Zipline
+Name[nl]=Zipline
 Icon=cloud-upload
 
 [Desktop Action ziplineUpload]
 Name=Upload to Zipline
+Name[nl]=Uploaden naar Zipline
 Icon=cloud-upload
 Exec=/bin/sh -c 'exec python3 "$HOME/.local/share/kio/servicemenus/zipline-upload.py" "$@"' sh %F
 
 [Desktop Action ziplineConfigure]
 Name=Configure Zipline uploads…
+Name[nl]=Zipline-uploads instellen…
 Icon=configure
 Exec=/bin/sh -c 'exec python3 "$HOME/.local/share/kio/servicemenus/zipline-upload.py" --configure'
